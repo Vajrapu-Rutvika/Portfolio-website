@@ -1,0 +1,289 @@
+```css
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background-color:#fafafa;
+    color:#111111;
+}
+
+nav{
+    background-color:#111111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 25px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav h3{
+    color:white;
+    margin:0;
+}
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+ul li a{
+    display:block;
+    color:white;
+    padding:15px 20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+ul li a:hover{
+    color:#888888;
+}
+
+#home{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background-color:#fafafa;
+}
+
+.Main{
+    font-size:3.5rem;
+    font-weight:700;
+    letter-spacing:-1px;
+    margin-bottom:10px;
+    animation:fadeInUp 1s ease;
+}
+
+.role{
+    color:#444444;
+    font-weight:500;
+    margin-bottom:20px;
+    animation:fadeInUp 1.2s ease;
+}
+
+.description{
+    max-width:650px;
+    margin:20px auto;
+    line-height:1.8;
+    color:#666666;
+    animation:fadeInUp 1.4s ease;
+}
+
+.buttons{
+    margin-top:20px;
+}
+
+.projectbtn{
+    background-color:#111111;
+    color:white;
+    padding:12px 24px;
+    border-radius:10px;
+    text-decoration:none;
+    margin:8px;
+    transition:all 0.3s ease;
+}
+
+.projectbtn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.contactbtn{
+    background-color:white;
+    color:#111111;
+    border:2px solid #111111;
+    padding:12px 24px;
+    border-radius:10px;
+    text-decoration:none;
+    margin:8px;
+    transition:all 0.3s ease;
+}
+
+.contactbtn:hover{
+    background-color:#111111;
+    color:white;
+    transform:translateY(-3px);
+}
+
+#Skills,
+#Projects,
+#Contact{
+    padding:80px 40px;
+    background-color:#fafafa;
+}
+
+.skillheading,
+.projectheading,
+.contactheading{
+    text-align:center;
+    font-size:2.2rem;
+    color:#111111;
+    margin-bottom:40px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,0.12);
+}
+
+.projectcontainer{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.project-card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,0.12);
+}
+
+.project-card h4{
+    margin-top:0;
+}
+
+.project-card p{
+    color:#555555;
+    line-height:1.7;
+}
+
+.project-card a{
+    text-decoration:none;
+    color:#111111;
+    font-weight:600;
+}
+
+.project-card a:hover{
+    color:#666666;
+}
+
+.contactform{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contactform label{
+    font-weight:500;
+}
+
+.contactform input,
+.contactform textarea{
+    padding:12px;
+    border:1px solid #dddddd;
+    border-radius:8px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.contactform input:focus,
+.contactform textarea:focus{
+    outline:none;
+    border-color:#111111;
+}
+
+.contactform button{
+    background-color:#111111;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contactform button:hover{
+    background-color:#333333;
+}
+
+footer{
+    background-color:#111111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer p{
+    margin:5px;
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    ul{
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+    }
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .projectcontainer{
+        grid-template-columns:1fr;
+    }
+
+    .Main{
+        font-size:2.4rem;
+    }
+
+    .description{
+        max-width:90%;
+    }
+
+    #Skills,
+    #Projects,
+    #Contact{
+        padding:60px 20px;
+    }
+}
+```
